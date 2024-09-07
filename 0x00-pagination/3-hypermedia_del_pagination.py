@@ -41,7 +41,7 @@ class Server:
             page_size (int): The number of items per page.
 
         Returns:
-            Dict: A dictionary with pagination details including data, index, 
+            Dict: A dictionary with pagination details including data, index,
                   next_index, and page_size.
         """
         indexed_data = self.indexed_dataset()
