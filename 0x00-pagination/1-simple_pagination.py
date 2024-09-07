@@ -54,7 +54,7 @@ class Server:
         """
         # Assert that page and page_size are positive integers
         assert isinstance(page, int) and page > 0, "page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "page_size must be a positive integer"
+        assert isinstance(page_size, int) and page_size > 0, "page_siz must be postv"
 
         # Get the dataset
         dataset = self.dataset()
