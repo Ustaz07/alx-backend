@@ -22,7 +22,7 @@ class FIFOCache(BaseCaching):
             self.cache_data[key] = item
             self.order.append(key)
 
-            # Check if cache exceeds MAX_ITEMS and discard the first inserted item
+            # If cache exceeds MAX_ITEMS discard first inserted item
             if len(self.cache_data) > BaseCaching.MAX_ITEMS:
                 first_key = self.order.pop(0)
                 del self.cache_data[first_key]
