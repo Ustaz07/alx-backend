@@ -47,7 +47,9 @@ class LFUCache(BaseCaching):
         """ Evict the least frequently used item from the cache """
         # Find the item(s) with the lowest usage count
         min_freq = min(self.usage_count.values())
-        candidates = [k for k in self.recently_used if self.usage_count[k] == min_freq]
+        candidates = [
+            k for k in self.recently_used if self.usage_count[k] == min_freq
+        ]
 
         # Use LRU strategy to decide among the least frequently used
         if candidates:
