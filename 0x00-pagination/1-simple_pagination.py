@@ -10,11 +10,11 @@ from typing import List, Tuple
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
     Calculate the start and end indices for a given page and page size.
-    
+
     Args:
         page (int): The current page number.
         page_size (int): The number of items per page.
-    
+
     Returns:
         Tuple[int, int]: A tuple containing the start index and the end index.
     """
@@ -44,17 +44,19 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
         Returns a page of the dataset.
-        
+
         Args:
             page (int): The current page number.
             page_size (int): The number of items per page.
-        
+
         Returns:
             List[List]: A list of rows corresponding to the requested page.
         """
         # Assert that page and page_size are positive integers
-        assert isinstance(page, int) and page > 0, "page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "page_siz must be postv"
+        assert isinstance(
+            page, int) and page > 0, "page must be a positive integer"
+        assert isinstance(
+            page_size, int) and page_size > 0, "page_siz must be postv"
 
         # Get the dataset
         dataset = self.dataset()
@@ -62,7 +64,7 @@ class Server:
         # Get the start and end indices for the page
         start, end = index_range(page, page_size)
 
-        # Return the corresponding page of data or an empty list if out of range
+        # Return corresp. page of data or an empty list if out of range
         if start >= len(dataset):
             return []
         return dataset[start:end]
