@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Basic Flask app with a single route.
-Displays 'Welcome to Holberton' as the page title and 'Hello world' as the header.
+Displays 'Welcome to Holberton' as the page title.
 """
 
 from flask import Flask, render_template
