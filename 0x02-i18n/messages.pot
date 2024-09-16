@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-16 17:00+0000\n"
+"POT-Creation-Date: 2024-09-16 18:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "Hello, World!"
 msgstr ""
 
-#: templates/3-index.html:5
+#: templates/3-index.html:7
 msgid "home_title"
 msgstr ""
 
-#: templates/3-index.html:8
+#: templates/3-index.html:10
 msgid "home_header"
 msgstr ""
 
