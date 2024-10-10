@@ -1,0 +1,13 @@
+const { promisify } = require('util');
+
+// Promisify Redis functions
+const getAsync = promisify(client.get).bind(client);
+
+(async () => {
+    try {
+        const value = await getAsync('framework');
+        console.log(value); // Express
+    } catch (err) {
+        console.error(err);
+    }
+})();
